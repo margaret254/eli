@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% load static %}
+ 
+{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'img/slide/slide10.JPG' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"><em>Events.......</em></h2>
+              <!-- <p class="animate__animated animate__fadeInUp">Are you holding an event and you want to keep the memories........</p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'img/slide/slide22.jpg' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Weddings and Parties......</h2>
+              <!-- <p class="animate__animated animate__fadeInUp">Your wedding is happening soon and you want a great and experienced photographer to capture clean and clear photos.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({% static 'img/slide/slide33.jpeg' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Vacation Times.......</h2>
+              <!-- <p class="animate__animated animate__fadeInUp">You want to take your family and friends out for a vacation, and you dont want to loose those great memories. Contact us, and we shall help you create great memories..</p> -->
+
+            </div>
+          </div>
+        </div>
+
+        <!-- slide4 -->
+        <div class="carousel-item" style="background-image: url({% static 'img/slide/slide44.JPG' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Proposals and Photoshoots.....</h2>
+              <!-- <p class="animate__animated animate__fadeInUp">Do you want to propose to your lover, and you want someone to help you make the moments memorable. Or you want to take your loved ones for a photoshoot. Reach up to us through our contacts below..</p> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2>About Hawi Photography..</h2>
+            <img src="{% static 'img/slide/slide10.JPG' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              I grew up wanting to do something related to art and creativity. Picking up a camera gave me an opportunity to capture a specific vision and share with the world. With great interest in portraits, documentary and sports: Hawi photography aims to preserve time, make memories and feel raw emotions rising from within that image. That’s exactly what I want to do for you and that’s enough of a reason for us to hang cameras around our shoulders wherever we go. 
+            <ul>
+              <li><i class="ri-check-double-line"></i> The goal of <strong><em>Hawi Photography</em></strong> is to show the beauty, grace, strength, and enthusiasm of people.</li>
+              <li><i class="ri-check-double-line"></i> I am based in Canada but cover any geographical location.</li>
+              <li><i class="ri-check-double-line"></i>  Get in touch with me wherever you are.</li>
+            </ul>
+           
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <hr>
+    <!-- ======= Clients Section ======= -->
+     <section id="clients" class="clients section-bg">
+      <div class="container">
+            <h3> Our Clients..</h3>
+        <div class="row">
+          {% for y in logos %}
+          <div class="col-lg-3 ">
+                <img src="{{y.logos.url}}"  alt="Image">
+            </div>
+          
+          {% endfor %}
+         
+
+      </div>
+    </section> 
+    <!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+       
+          <h2>Our Services.</h2>
+     
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="icofont-ui-calendar"></i>
+              <h4>Events....</h4>
+              <p>Hawi photography helps you in celebrating all kinds of events. I pride myself on being able to adapt to the needs of each specific situation, bringing out the best aspects of everyone involved.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="icofont-camera"></i>
+              <h4>Photo Sessions...</h4>
+              <p>At Hawi Photography, we offer many different styles of portrait photography. We want to help create that special moment for you. We offer you the on-location portraits tailored to your preferred location and can set up outside or in a more traditional setting. We focus on capturing the love within the family and bringing that exact experience to life.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="icofont-image"></i>
+              <h4>Weddings.</h4>
+              <p>At Hawiphotography, we understand your need and so we help you capture this lifetime event in an inspirational, fun and a creative way.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="icofont-document-folder"></i>
+              <h4>Global Coverage and Documentaries..</h4>
+              <p>We offer our services to customers located in many different parts of the world.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- End Services Section -->
+    
+
+
+    <!-- ======= Portfolio Section ======= -->
+
+    <section id="portfolio" class="portfolio">
+
+      <div class="container">
+              <h2>Portfolio</h2>     
+              
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class=" col-lg-12">
+                <ul id="portfolio-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-app">Corporates</li>
+                  <li data-filter=".filter-card">Sports</li>
+                  <li data-filter=".filter-web">Weddings</li>
+                  <li data-filter=".filter-web">Documentaries</li>
+
+                </ul>
+              </div>
+            </div>
+      <div class="row portfolio-container">
+    
+        <!-- <div class="row"> -->
+            <div class=" portfolio-item row ">
+            {% for x in img %}
+            <div  class="col-lg-4 col-md-6  filter-app">
+                <img src="{{x.images.url}}" class="img-fluid" alt="Image">
+            </div>
+                      
+          {% endfor %}
+        </div>
+        <!-- <div class=" portfolio-item row ">
+          {% for x in corp %}
+          <div  class="col-lg-4 col-md-6  filter-app">
+              <img src="{{x.images.url}}" class="img-fluid" alt="Image">
+          </div>
+                    
+        {% endfor %}
+      </div> -->
+       
+      <!-- </div> -->
+      </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div   class=" col-lg-12 ">
+              <!-- <div class="footer-info"> -->
+                <h3>HawiPhotography</h3>
+                <p>
+                  Canada <br>
+                  NY 535022, USA<br><br>
+                  <strong>Phone:</strong> 07000000000<br>
+                  <strong>Email:</strong> info@example.com<br>
+                </p>
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>HawiPhotography</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+   
+    </main>
+     
+    
+    </section>
+
+
+
+       
+         
+
+  
+
+  
+
+  {% endblock %}
