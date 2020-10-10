@@ -1,1 +1,0 @@
-web: gunicorn eliakim.wsgi --log-file -
