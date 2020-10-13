@@ -81,10 +81,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   /* padding-left: 10px; */
   font-family: 'Peddana', serif;
+  color: #fff;
 }
 
 #header .logo a {
-  color: #fafafa;
+  color: #fff;
 }
 
 #header .logo img {
